@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+html,
+body,
+.content {
+  width: 100%;
+  height: 100%;
+  overflow: hidden; }
+
+body {
+  font-size: .32rem; }
+
+b, strong {
+  font-weight: normal; }
+
+i, em {
+  font-style: normal; }
+
+.content {
+  display: -webkit-flex;
+  -webkit-flex-direction: column; }
+
+.header, .normal {
+  display: -webkit-flex;
+  -webkit-justify-content: center;
+  -webkit-align-items: center; }
+
+.header {
+  width: 100%;
+  height: .9rem;
+  background: #333;
+  color: #fff; }
+  .header span {
+    -webkit-flex: 1.5;
+    text-align: center; }
+    .header span:nth-of-type(2) {
+      -webkit-flex: 5;
+      text-align: left;
+      font-size: .32rem; }
+    .header span:nth-of-type(1), .header span:nth-of-type(3) {
+      font-size: .32rem; }
+
+.section {
+  width: 100%;
+  overflow-y: scroll;
+  -webkit-flex: 1;
+  background: #fff;
+  position: relative; }
+
+.main {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: rgba(0, 0, 0, 0.5); }
+
+.wrap {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate3d(-50%, -50%, 0);
+  width: 90%;
+  height: 70%;
+  background: #fff;
+  border-radius: 10px; }
+
+.logo {
+  width: 50%;
+  height: auto;
+  margin: 0 auto;
+  padding-top: .3rem; }
+  .logo img {
+    width: 100%;
+    height: auto; }
+
+.logoAlt {
+  width: 100%;
+  text-align: center;
+  font-size: .36rem;
+  padding-top: .1rem; }
+
+.normal {
+  width: 80%;
+  margin: 0 auto;
+  border-bottom: .02rem solid #ccc;
+  padding-top: 1rem;
+  padding-bottom: .1rem; }
+  .normal span {
+    display: inline-block;
+    width: 15%;
+    text-align: center; }
+    .normal span img {
+      width: 35%;
+      height: auto; }
+  .normal input {
+    width: 80%;
+    padding-left: .2rem;
+    border: none;
+    outline: none; }
+    .normal input::-webkit-input-placeholder {
+      color: #ccc;
+      font-size: .32rem; }
+
+.btn {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: .7rem; }
+  .btn input {
+    width: 100%;
+    height: .8rem;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    background: lightseagreen;
+    color: #fff;
+    font-size: .3rem; }
+
+/*# sourceMappingURL=style.css.map */
